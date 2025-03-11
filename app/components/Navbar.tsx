@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link href="#about-me" className="text-white/80 hover:text-indigo-300 transition">About</Link>
           <Link href="#skills" className="text-white/80 hover:text-indigo-300 transition">Skills</Link>
           <Link href="#projects" className="text-white/80 hover:text-indigo-300 transition">Projects</Link>
-          <Link href="#" className="text-white/80 hover:text-indigo-300 transition">Contact</Link>
+          <Link href="#contact-me" className="text-white/80 hover:text-indigo-300 transition">Contact</Link>
         </nav>
 
         {/* Mobile Menu Icon */}
@@ -43,8 +43,8 @@ const Navbar = () => {
           <Link href="#Home" className="text-white text-2xl hover:text-indigo-300 transition" onClick={() => setIsOpen(false)}>Home</Link>
           <Link href="#about-me" className="text-white text-2xl hover:text-indigo-300 transition" onClick={() => setIsOpen(false)}>About</Link>
           <Link href="#skills" className="text-white text-2xl hover:text-indigo-300 transition" onClick={() => setIsOpen(false)}>Skills</Link>
-          <Link href="#" className="text-white text-2xl hover:text-indigo-300 transition" onClick={() => setIsOpen(false)}>Projects</Link>
-          <Link href="#" className="text-white text-2xl hover:text-indigo-300 transition" onClick={() => setIsOpen(false)}>Contact</Link>
+          <Link href="#projects" className="text-white text-2xl hover:text-indigo-300 transition" onClick={() => setIsOpen(false)}>Projects</Link>
+          <Link href="#contact-me" className="text-white text-2xl hover:text-indigo-300 transition" onClick={() => setIsOpen(false)}>Contact</Link>
         </nav>
 
         <button 

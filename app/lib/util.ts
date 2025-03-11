@@ -14,6 +14,7 @@ import Next from './images/Next.jpg';
 import Postgres from './images/postgres.jpg';
 import git from './images/git.jpg'
 import Vercel from './images/vercel.jpg'
+import Net from './images/Net.jpg'
 
 export const images = {
     CSS,
@@ -30,7 +31,8 @@ export const images = {
     Next,
     Postgres,
     git,
-    Vercel
+    Vercel,
+    Net
 }
 
 export const Frontend = [
@@ -55,7 +57,7 @@ export const Frontend = [
         img: rt
     },
     {
-        title: 'TailwindCSS',
+        title: 'Tailwind CSS',
         img: TAILWIND
     },
     {
@@ -102,5 +104,9 @@ export const Tools = [
     {
         title: 'Vercel',
         img: Vercel
+    },
+    {
+        title: 'Netlify',
+        img: Net
     }
 ]

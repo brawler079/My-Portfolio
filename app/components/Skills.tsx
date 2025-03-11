@@ -23,7 +23,7 @@ const Skills = () => {
             <h2 className="text-2xl font-semibold text-slate-400 mb-4">
               {section.title}
             </h2>
-            <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-12 p-4">
+            <div className="w-full flex flex-wrap justify-center gap-6 sm:gap-24 p-4">
               {section.data.map((item, idx) => (
                 <div
                   key={idx}
@@ -32,7 +32,7 @@ const Skills = () => {
                   <img
                     src={item.img.src}
                     alt={item.title}
-                    className="w-12 h-12 sm:w-20 sm:h-20 transition-transform duration-300 hover:scale-110"
+                    className="w-10 h-10 sm:w-16 sm:h-16 transition-transform duration-300 hover:scale-110"
                   />
                   <h3 className="text-lg sm:text-xl font-semibold text-slate-300 text-center mt-3">
                     {item.title}

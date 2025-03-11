@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased animated-grid 
         relative bg-[#010713] bg-gradient-to-br from-[#010713] to-[#070716]`}>
         <Navbar />
+        <Sidebar />
         <main className="relative z-10 md:mx-28">{children}</main>
       </body>
     </html>
