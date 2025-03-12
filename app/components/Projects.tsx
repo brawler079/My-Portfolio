@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+
 import { projects } from '../lib/projects';
 import G from '../lib/images/GH.jpg';
 
@@ -5,14 +7,14 @@ const Projects = () => {
   return (
     <section id="projects" className="flex flex-col justify-start items-start px-8 mx-6 sm:mx-8 md:mx-14 sm:px-12 lg:px-16">
       <header className="text-left mb-8">
-        <h1 className="text-green-500 text-3xl font-bold">Things I've Worked On</h1>
+        <h1 className="text-green-500 text-3xl font-bold">Things I&apos;ve Worked On</h1>
       </header>
 
-      <div className="flex flex-col gap-16 mt-8">
+      <div className="w-full flex flex-col gap-16 mt-8">
         {projects.map((item, index) => (
           <div 
-            key={index} 
-            className={`flex flex-col md:flex-row items-center gap-8 ${
+            key={index}
+            className={`flex flex-col md:flex-row items-center gap-12 xl:gap-24 ${
               index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
             } w-full max-w-5xl mx-auto`}>
             <div className="w-full md:w-[48%]">
@@ -41,11 +43,11 @@ const Projects = () => {
               <p className="text-slate-400 text-sm mt-3 text-justify">●{item.PA}</p>
               <p className="text-slate-400 text-sm mt-1 text-justify">●{item.PB}</p>
 
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="w-full mt-4 flex flex-wrap gap-2">
                 {item.TS.map((tech, i) => (
                   <span 
                     key={i} 
-                    className="text-s bg-slate-900 text-green-500 px-2 py-1 rounded-3xl">
+                    className="text-xs text-green-500 font-semibold font-sans px-1 py-1 text-center">
                     {tech}
                   </span>
                 ))}
