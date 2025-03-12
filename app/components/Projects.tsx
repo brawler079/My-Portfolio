@@ -24,16 +24,17 @@ const Projects = () => {
 
             <div 
               className="w-full md:w-[50%] md:h- p-6 rounded-lg shadow-lg md:p-8">
-              <div className="flex items-center justify-between">
+              <div className="flex items-start justify-between">
                 <h2 className="text-slate-300 text-2xl font-semibold">{item.title}</h2>
                 <a 
                   href={item.github} 
                   target="_blank" 
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                  className='items-start'>  
                   <img 
                     src={G.src} 
                     alt="GitHub" 
-                    className="w-12 h-12 object-contain cursor-pointer hover:opacity-80 transition mt-4"/>
+                    className="w-12 h-12 object-contain cursor-pointer hover:opacity-80 transition"/>
                 </a>
               </div>
 

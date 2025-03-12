@@ -1,18 +1,17 @@
 'use client';
 import About from './components/About'
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 
 const Home = () => {
-
-  const handleClick = () => { }
-
   return (
     <>
       {/* Home */}
       <section id="Home" className='min-h-screen flex items-center px-8 mx-6 sm:mx-8 md:mx-14 sm:px-12 lg:px-16'>
         <div className='max-w-5xl text-left'>
-          <h1 className='text-green-500 mb-4 md:text-lg font-light font-mono'>Hi, my name is</h1>
+          <h1 className='text-green-500 mb-4 md:text-lg font-light font-mono mx-1'>Hi, my name is</h1>
           <h2 className='text-slate-300 mb-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold'>
             Abhilakshay Anand
           </h2>
@@ -23,9 +22,8 @@ const Home = () => {
             Innovating the web with precision and creativity. As a full-stack developer, I craft seamless, user-friendly experiences that blend performance, accessibility, and modern design.
           </p>
           <div className='flex space-x-6'>
-            <a href='#' className='text-green-500 font-mono text-lg border border-green-500 px-5 py-3 
-              rounded-md hover:bg-green-600/10 transition duration-200 cursor-pointer'
-              onClick={handleClick}>
+            <a href='#contact' className='text-green-500 font-mono text-lg border border-green-500 px-5 py-3 
+              rounded-md hover:bg-green-600/10 transition duration-200 cursor-pointer'>
               Get in touch
             </a>
             <a className='text-green-500 font-mono text-lg border border-green-500 px-5 py-3 
@@ -38,6 +36,8 @@ const Home = () => {
       <About />
       <Skills />
       <Projects />
+      <Contact />
+      <Footer />
     </>
   )
 }
