@@ -11,15 +11,15 @@ import Sidebar from "./components/Sidebar";
 const Home = () => {
   return (
     <AnimatePresence mode="wait">
-      {/* Main Section */}
       <motion.section
         id="Home"
-        className="h-screen flex items-center px-8 mx-6 sm:mx-8 md:mx-14 sm:px-12 lg:px-16 overflow-x-hidden w-full"
+        className="h-screen flex items-center px-8 mx-6 sm:mx-8 md:mx-14 sm:px-12 lg:px-16 w-full overflow-hidden"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
       >
+
         <motion.div
           className="max-w-5xl text-left w-full"
           initial={{ opacity: 0, x: -100 }}
