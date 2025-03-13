@@ -4,17 +4,17 @@ const About = () => {
   return (
     <section
       id="about-me"
-      className="py-32 px-6 sm:px-12 lg:px-16 mx-auto w-full max-w-[90%] md:max-w-3xl"
+      className="py-32 px-8 mx-6 sm:mx-8 md:mx-14 sm:px-12 lg:px-16"
     >
       <motion.div
         initial={{ opacity: 0, x: -100, scale: 0.9 }}
         whileInView={{ opacity: 1, x: 0, scale: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: false }}
-        className="text-left"
+        className="max-w-3xl text-left"
       >
         <motion.h1
-          className="text-4xl text-green-500 font-bold mb-6 text-center sm:text-left"
+          className="text-4xl text-green-500 font-bold text-start mb-6"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
