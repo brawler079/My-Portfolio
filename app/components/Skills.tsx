@@ -18,7 +18,7 @@ const Skills = () => {
       className="flex flex-col justify-start items-start px-8 py-36 mx-6 sm:mx-8 md:mx-14 sm:px-12 lg:px-16"
     >
       <div className="max-w-3xl text-left">
-        <h1 className="text-3xl font-bold text-green-500 mb-6">Skills</h1>
+        <h1 className="text-3xl font-bold text-green-500 mb-6 text-left">Skills</h1>
       </div>
       <div className="w-full flex flex-col space-y-18">
         {sections.map((section, index) => (
