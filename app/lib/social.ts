@@ -10,6 +10,11 @@ export const svg = {
 
 export const socialMediaLinks = [
     {
+        name: 'GitHub',
+        link: 'https://github.com/brawler079',
+        icon: GH
+    },
+    {
         name: 'Instagram',
         link: 'https://www.instagram.com/abhilakshay07/',
         icon: IN
@@ -19,9 +24,5 @@ export const socialMediaLinks = [
         link: 'https://www.linkedin.com/in/anand-abhiii',
         icon: LI
     },
-    {
-        name: 'GitHub',
-        link: 'https://github.com/brawler079',
-        icon: GH
-    }
+    
 ];

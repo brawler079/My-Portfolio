@@ -28,7 +28,7 @@ const Home = () => {
           viewport={{ once: false }}
         >
           <motion.h1
-            className="text-green-500 mb-4 text-lg sm:text-xl font-light font-mono mx-1"
+            className="text-green-500 mb-2 text-lg sm:text-xl font-light font-mono mx-1"
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.2 }}
@@ -38,7 +38,7 @@ const Home = () => {
           </motion.h1>
 
           <motion.h2
-            className="text-slate-300 mb-6 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold"
+            className="text-slate-300 mb-4 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
@@ -48,7 +48,7 @@ const Home = () => {
           </motion.h2>
 
           <motion.h3
-            className="text-slate-400 mb-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold"
+            className="text-slate-400 mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}

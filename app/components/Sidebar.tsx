@@ -16,7 +16,7 @@ const Sidebar = () => {
       >
         <motion.a
           href="mailto:anandabhilakshay@gmail.com"
-          className="text-slate-300 text-sm font-mono p-4 hover:text-green-400 transition-all duration-300"
+          className="text-slate-300 font-mono p-4 hover:text-green-400 transition-all duration-300"
           style={{ writingMode: "vertical-lr" }}
           whileHover={{ scale: 1.1, x: -5 }}
         >
@@ -35,8 +35,14 @@ const Sidebar = () => {
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="hidden md:flex flex-col fixed top-[80%] left-20 transform -translate-y-1/2 items-center group"
+        className="hidden md:flex flex-col fixed bottom-[80%] left-20 transform translate-y-1/2 items-center group"
       >
+        <motion.div
+          className="w-[1px] h-[315px] bg-green-400 mt-1"
+          initial={{ height: 0 }}
+          animate={{ height: 315 }}
+          transition={{ duration: 1, ease: "easeInOut" }}
+        />
         {socialMediaLinks?.map((item, index) => (
           <motion.a
             key={index}
@@ -51,12 +57,6 @@ const Sidebar = () => {
             </motion.div>
           </motion.a>
         ))}
-        <motion.div
-          className="w-[1px] h-[315px] bg-green-400 mt-1"
-          initial={{ height: 0 }}
-          animate={{ height: 315 }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-        />
       </motion.div>
     </>
   );

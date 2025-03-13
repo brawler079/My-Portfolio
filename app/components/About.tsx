@@ -24,7 +24,7 @@ const About = () => {
         </motion.h1>
 
         <motion.p
-          className="text-lg text-slate-400 mb-4 text-justify font-semibold"
+          className="text-lg text-slate-400 mb-4 font-semibold"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
