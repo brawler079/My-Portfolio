@@ -21,7 +21,6 @@ const Projects = () => {
         className="w-full flex flex-col gap-16 mt-8"
         initial="hidden"
         whileInView="visible"
-        exit="exit"
         viewport={{ once: false, amount: 0.2 }}
         variants={{
           hidden: { opacity: 0 },
@@ -29,7 +28,6 @@ const Projects = () => {
             opacity: 1,
             transition: { staggerChildren: 0.2 },
           },
-          exit: { opacity: 0, scale: 0.8 }, 
         }}
       >
         {projects.map((item, index) => (
@@ -40,7 +38,6 @@ const Projects = () => {
             }`}
             initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
             whileInView={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: index % 2 === 0 ? 100 : -100 }} 
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: false }}
           >
@@ -48,7 +45,6 @@ const Projects = () => {
               className="w-full md:w-[48%]"
               initial={{ scale: 0.8, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.5, opacity: 0 }} 
               transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
               viewport={{ once: false }}
             >
@@ -63,7 +59,6 @@ const Projects = () => {
               className="w-full md:w-[50%] md:h-auto p-6 rounded-lg shadow-lg md:p-8"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }} 
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: false }}
             >
@@ -83,7 +78,6 @@ const Projects = () => {
                     className="w-12 h-12 object-contain cursor-pointer hover:opacity-80"
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.2 }}
-                    exit={{ opacity: 0, scale: 0.5 }} 
                   />
                 </a>
               </div>
@@ -98,7 +92,6 @@ const Projects = () => {
                     className="text-xs text-green-500 font-semibold font-sans px-1 py-1 text-center"
                     initial={{ scale: 0.8, opacity: 0 }}
                     whileInView={{ scale: 1, opacity: 1 }}
-                    exit={{ scale: 0.5, opacity: 0 }} 
                     transition={{ duration: 0.4, delay: i * 0.1 }}
                     viewport={{ once: false }}
                   >
