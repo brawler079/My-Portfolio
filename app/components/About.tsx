@@ -34,7 +34,7 @@ const About = () => {
         </motion.p>
 
         <motion.p
-          className="text-lg text-slate-400 text-justify font-semibold"
+          className="text-lg text-slate-400 font-semibold"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
