@@ -1,5 +1,6 @@
 "use client";
 
+/* eslint-disable @next/next/no-img-element */
 import { projects } from '../lib/projects';
 import G from '../lib/images/GH.jpg';
 import { motion } from "framer-motion";
