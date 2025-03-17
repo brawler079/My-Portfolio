@@ -1,15 +1,32 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Function to close the menu if clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: any) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-transparent h-auto">
-      {/* Navbar Container */}
       <div className="flex items-center justify-between 
         mx-10 md:mx-28 lg:mx-52 xl:mx-64 my-6 p-4 md:py-4 md:px-6 bg-white/10 backdrop-blur-lg border border-transparent
         shadow-2xl shadow-indigo-500/20 rounded-3xl">
@@ -37,7 +54,6 @@ const Navbar = () => {
           ))}
         </nav>
 
-
         {/* Mobile Menu Icon */}
         <button
           className="md:hidden text-white text-3xl focus:outline-none"
@@ -47,8 +63,10 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu (Overlay) */}
-      <div className={`fixed left-1/4  inset-0 bg-[#0A0A1E]/80 backdrop-blur-md flex flex-col 
+      {/* Mobile Menu */}
+      <div 
+        ref={menuRef}
+        className={`fixed left-1/4 inset-0 bg-[#0A0A1E]/80 backdrop-blur-md flex flex-col 
         items-center justify-center transition-all ease-in duration-300
         ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"}`}>
 
