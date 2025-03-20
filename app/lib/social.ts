@@ -16,7 +16,7 @@ export const socialMediaLinks = [
     },
     {
         name: 'Instagram',
-        link: 'https://www.instagram.com/abhilakshay07/',
+        link: 'https://www.instagram.com/abhilakshay_anand/',
         icon: IN
     },
     {
