@@ -26,15 +26,15 @@ export const projects = [
         PB: 'Optimized MongoDB queries, reducing message retrieval time by 50% for improved user experience.',
         img: A2,
         github: 'https://github.com/brawler079/Area-204',
-        TS: ['React.js', 'Node.js', 'Socket.io', 'MongoDB', 'Express.js']
+        TS: ['React.js', 'Node.js', 'Socket.io', 'MongoDB', 'Express.js','Tailwind CSS']
     },
     {
-        title: 'Bone Fracture Detection',
+        title: 'Bone Fracture Detection using YOLOv8',
         PA: 'Created a deep learning model achieving 92% accuracy in X-ray fracture detection with advanced preprocessing techniques.',
         PB: 'Designed a responsive frontend enabling real-time result visualization and treatment suggestions.',
         img: BF,
         github: 'https://github.com/brawler079/FractureScan-AI',
-        TS: ['Next.js', 'Tailwind CSS', 'Python', 'FastAPI']
+        TS: ['Next.js', 'Tailwind CSS', 'Python', 'FastAPI', 'MonogoDB', 'YOLOv8']
     },
     {
         title: 'Collabify: Task Management App',
@@ -42,6 +42,6 @@ export const projects = [
         PB: 'Implemented secure role-based access control to manage user permissions and data access.',
         img: CT,
         github: 'https://github.com/brawler079/Collaborative-Task-Management-System',
-        TS: ['React.js', 'Node.js', 'Socket.io', 'MongoDB', 'Express.js']
+        TS: ['React.js', 'Node.js', 'Socket.io', 'MongoDB', 'Express.js', 'Tailwind CSS']
     }
 ]
