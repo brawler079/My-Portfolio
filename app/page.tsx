@@ -85,7 +85,7 @@ const Home = () => {
             </motion.a>
 
             <motion.a
-              href="https://drive.google.com/file/d/1XBHritRzXzMgy283bCDfrgOIYQBK-6qR/view?usp=sharing"
+              href="https://drive.google.com/file/d/1qdfYxI8TYct5Bod9TZzwgCr8wnMnGlet/view?usp=sharing"
               className="text-green-500 font-mono text-lg border border-green-500 p-3 rounded-md hover:bg-green-600/10 transition duration-200 cursor-pointer items-center justify-center text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
