@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <AnimatePresence mode="wait">
       <motion.section
+        key="home"
         id="Home"
         className="h-screen flex items-center px-8 mx-6 sm:mx-8 md:mx-14 sm:px-12 lg:px-16 w-full overflow-hidden"
         initial={{ opacity: 0, y: 50 }}
@@ -84,14 +85,14 @@ const Home = () => {
               Get in touch
             </motion.a>
 
-            <motion.a
+            {/* <motion.a
               href="https://drive.google.com/file/d/1GCM-6oj9wyM7xHk1LXgsqwIQ2_w5iqjJ/view?usp=sharing"
               className="text-green-500 font-mono text-lg border border-green-500 p-3 rounded-md hover:bg-green-600/10 transition duration-200 cursor-pointer items-center justify-center text-center"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Resume
-            </motion.a>
+            </motion.a> */}
           </motion.div>
         </motion.div>
       </motion.section>

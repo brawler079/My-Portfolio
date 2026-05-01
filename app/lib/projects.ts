@@ -20,14 +20,14 @@ export const projects = [
         github: 'https://github.com/brawler079/Musi',
         TS: ['Next.js', 'Tailwind CSS', 'PostgreSQL', 'YouTube API', 'Next-Auth']
     },
-    {
-        title: 'Area 204: Real-time Chat Application',
-        PA: 'Developed a real-time chat application handling 150+ concurrent users with low-latency messaging using Socket.io.',
-        PB: 'Optimized MongoDB queries, reducing message retrieval time by 50% for improved user experience.',
-        img: A2,
-        github: 'https://github.com/brawler079/Area-204',
-        TS: ['React.js', 'Node.js', 'Socket.io', 'MongoDB', 'Express.js','Tailwind CSS']
-    },
+    // {
+    //     title: 'Area 204: Real-time Chat Application',
+    //     PA: 'Developed a real-time chat application handling 150+ concurrent users with low-latency messaging using Socket.io.',
+    //     PB: 'Optimized MongoDB queries, reducing message retrieval time by 50% for improved user experience.',
+    //     img: A2,
+    //     github: 'https://github.com/brawler079/Area-204',
+    //     TS: ['React.js', 'Node.js', 'Socket.io', 'MongoDB', 'Express.js','Tailwind CSS']
+    // },
     {
         title: 'Bone Fracture Detection using YOLOv8',
         PA: 'Created a deep learning model achieving 92% accuracy in X-ray fracture detection with advanced preprocessing techniques.',
