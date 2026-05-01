@@ -59,7 +59,7 @@ const Home = () => {
           </motion.h3>
 
           <motion.p
-            className="text-slate-400 mb-12 max-w-lg md:max-w-2xl md:text-lg xl:text-xl font-normal"
+            className="text-slate-400 mb-12 max-w-lg md:max-w-2xl md:text-lg xl:text-xl font-normal leading-relaxed text-justify"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
